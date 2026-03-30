@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar__links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar__link {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+
+}

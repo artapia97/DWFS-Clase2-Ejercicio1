@@ -1,12 +1,17 @@
 import './App.css'
+import Navbar from "./components/Navbar/Navbar.jsx";
 
-function App() {
+const navLinks = [
+    { label: "Inicio", href: "#" },
+    { label: "Estrenos", href: "#" },
+    { label: "Géneros", href: "#" },
+    { label: "Contacto", href: "#" },
+];
 
-  return (
-    <>
-      <h1>Clase del 23/03/2026 - Modificada</h1>
-    </>
-  )
+export default function App() {
+    return (
+        <div className="app">
+            <Navbar links={navLinks} />
+        </div>
+    );
 }
-
-export default App
