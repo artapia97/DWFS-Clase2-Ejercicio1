@@ -1,22 +1,22 @@
 import "./MovieCard.css";
 
 export default function MovieCard({ movie }) {
-    const { image, title, year, description, genre, rating } = movie;
+    const { image, title, year, description, genre, rating, color } = movie;
 
     return (
         <article className="movie-card">
-            <div className="movie-card__header">
-                <span>{image}</span>
-                <span>{year}</span>
+            <div className="movie-card__poster" style={{ backgroundColor: color }}>
+                <span className="movie-card__emoji">{image}</span>
+                <span className="movie-card__year">{year}</span>
             </div>
             <div className="movie-card__body">
-                <h3>{title}</h3>
-                <p>{description}</p>
+                <h3 className="movie-card__title">{title}</h3>
+                <p className="movie-card__description">{description}</p>
                 <div className="movie-card__footer">
-                    <span>{genre}</span>
-                    <span>{rating}</span>
+                    <span className="movie-card__genre">{genre}</span>
+                    <span className="movie-card__rating">{rating}</span>
                 </div>
-                <button>Ver más</button>
+                <button className="movie-card__btn">Ver más</button>
             </div>
         </article>
     );

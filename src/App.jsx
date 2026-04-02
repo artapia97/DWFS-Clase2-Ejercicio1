@@ -18,8 +18,9 @@ export default function App() {
     return (
         <div className="app">
             <Navbar links={navLinks} />
-            <PageLayout genres={genres} featuredMovie={featuredMovie}  />
-            <MovieGrid movies={movies} />
+            <PageLayout genres={genres} featuredMovie={featuredMovie}>
+                <MovieGrid movies={movies} />
+            </PageLayout>
             <Footer year={2026}/>
         </div>
     );

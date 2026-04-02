@@ -11,12 +11,12 @@ export default function Sidebar({ genres, featuredMovie }) {
             </section>
 
             <section className="sidebar__section sidebar__featured">
-                <h3>Destacado del mes</h3>
-                <div className="sidebar__featured">
-                    <span>{featuredMovie.image}</span>
-                    <p>{featuredMovie.title}</p>
-                    <p>{featuredMovie.genre}</p>
-                    <p>
+                <h3 className="sidebar__title">Destacado del mes</h3>
+                <div className="sidebar__featured-card">
+                    <span className="sidebar__featured-emoji">{featuredMovie.image}</span>
+                    <p className="sidebar__title">{featuredMovie.title}</p>
+                    <p className="sidebar__featured-genre">{featuredMovie.genre}</p>
+                    <p className="sidebar__featured-rating">
                         ⭐ {featuredMovie.rating}
                     </p>
                 </div>

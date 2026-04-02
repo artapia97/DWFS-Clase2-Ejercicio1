@@ -4,9 +4,9 @@ import Sidebar from "../Sidebar/Sidebar.jsx";
 
 export default function PageLayout({ genres, featuredMovie, children }) {
     return (
-        <div>
+        <div className="page-layout">
             <Sidebar genres={genres} featuredMovie={featuredMovie}/>
-            <main>{children}</main>
+            <main className="page-layout__main">{children}</main>
         </div>
     )
 }
